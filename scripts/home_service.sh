@@ -5,7 +5,7 @@ sleep 5
 xterm -e " roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find add_markers)/../world/mymap.yaml " &
 sleep 5
 xterm -e " rosrun rviz rviz -d /home/workspace/catkin_ws/src/rvizConfig/home_service.rviz " &
-sleep 15
-xterm -e "rosrun add_markers add_markers " &
 sleep 5
-xterm -e "rosrun pick_objects pick_objects"
+xterm -e "rosrun pick_objects pick_objects " &
+sleep 5
+xterm -e "rosrun add_markers add_markers "
