@@ -58,6 +58,37 @@ $ git clone https://github.com/studian/RoboND-P5-Home_Service_Robot.git src
 $ cd src && catkin_init_workspace
 ```
 
+## Build the Project (from catkin_ws folder)
+```
+$ cd ..
+$ catkin_make
+```
+
+## Run the home_service script
+Step 1 is sourcing, 2 is creating permissions and 3 is running the script.
+```
+1 $ source devel/setup.bash
+2 $ chmod 777 ./src/scripts/*.sh
+3 $ ./src/scripts/home_service.sh
+```
+
+## Running the other scripts
+
+For mapping use:
+```
+$ cd catkin_ws
+$ source devel/setup.bash
+$ ./src/scripts/test_slam.sh
+```
+
+For navigation testing
+```
+$ cd catkin_ws
+$ source devel/setup.bash
+$ ./src/scripts/test_navigation.sh
+```
+
+## Catkin workspace should look something like this:
 ```
 catkin_ws/src
     ├── slam_gmapping                  # gmapping_demo.launch file                   
@@ -106,32 +137,3 @@ catkin_ws/src
 * slam_gmapping : provides SLAM capability in conjunction with the gmapping package.   
 
 
-## Build the Project (from catkin_ws folder)
-```
-$ cd ..
-$ catkin_make
-```
-
-## Run the home_service script
-Step 1 is sourcing, 2 is creating permissions and 3 is running the script.
-```
-1 $ source devel/setup.bash
-2 $ chmod 777 ./src/scripts/*.sh
-3 $ ./src/scripts/home_service.sh
-```
-
-## Running the other scripts
-
-For mapping use:
-```
-$ cd catkin_ws
-$ source devel/setup.bash
-$ ./src/scripts/test_slam.sh
-```
-
-For navigation testing
-```
-$ cd catkin_ws
-$ source devel/setup.bash
-$ ./src/scripts/test_navigation.sh
-```
