@@ -88,6 +88,20 @@ $ source devel/setup.bash
 $ ./src/scripts/test_navigation.sh
 ```
 
+For add_markers testing
+```
+$ cd catkin_ws
+$ source devel/setup.bash
+$ ./src/scripts/add_markers.sh
+```
+
+For pick_objects testing
+```
+$ cd catkin_ws
+$ source devel/setup.bash
+$ ./src/scripts/pick_objects
+```
+
 ## Catkin workspace should look something like this:
 ```
 catkin_ws/src
@@ -105,7 +119,7 @@ catkin_ws/src
     │   ├── ...
     ├── world                          # world files
     │   ├── ...
-    ├── scripts                   # shell scripts files
+    ├── scripts                        # shell scripts files
     │   ├── ...
     ├──RvizConfig                      # rviz configuration files
     │   ├── ...
@@ -114,6 +128,9 @@ catkin_ws/src
     │   ├── ...
     ├──add_markers                     # add_marker C++ node
     │   ├── src/add_markers.cpp
+    │   ├── ...
+    ├──add_markers_test                # add_markers_test C++ node
+    │   ├── src/add_markers_test.cpp
     │   ├── ...
     └──
 ```
